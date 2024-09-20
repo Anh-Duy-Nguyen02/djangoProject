@@ -23,3 +23,13 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+    
+class Idol(models.Model):
+    stage_name = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    group_name = models.CharField(max_length=100)
+    company_name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.stage_name
